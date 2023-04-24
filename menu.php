@@ -1,5 +1,5 @@
 <?php
-$path = 'http://' . $_SERVER["HTTP_HOST"] . '/projetoWeb2';
+$path = 'http://' . $_SERVER["HTTP_HOST"] . '/devweb2023';
 ?>
 <nav class="navbar navbar-expand-lg bg-body-tertiary mt-3">
     <div class="container-fluid">
@@ -18,18 +18,49 @@ $path = 'http://' . $_SERVER["HTTP_HOST"] . '/projetoWeb2';
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Campus
-                    </a>
+                        aria-expanded="false">Campus</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="<?php echo $path; ?>/view/cadastroDeCampus.php">Cadastrar</a></li>
-                        <li><a class="dropdown-item" href="#">Buscar</a></li>
+                        <li><a class="dropdown-item"
+                                href="<?php echo $path; ?>/view/campus/cadastroDeCampus.php">Cadastrar</a></li>
+                        <li><a class="dropdown-item" href="<?php echo $path; ?>/view/campus/buscarCampus.php">Buscar</a>
+                        </li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
                 </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Curso</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item"
+                                href="<?php echo $path; ?>/view/curso/curso.php">Cadastrar</a></li>
+                        <li><a class="dropdown-item" href="<?php echo $path; ?>/view/curso/BuscarCurso.php">Buscar</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Area</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item"
+                                href="<?php echo $path; ?>/view/area/cadastroArea.php">Cadastrar</a></li>
+                        <li><a class="dropdown-item" href="<?php echo $path; ?>/view/area/buscarArea.php">Buscar</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+
                 <li class="nav-item">
                     <a class="nav-link disabled">Disabled</a>
                 </li>
